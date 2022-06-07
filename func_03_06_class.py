@@ -107,7 +107,8 @@ class AEC_model(object):
     def v_rev(self,T_in,w,P_s):
             weight_conc=w #[kgKoH/kgl]
             KOH_mol_w=56.1        #[g/mol]
-            m=weight_conc*1000/KOH_mol_w
+            rho=self.density(self.A(T_in-273),w)   #A function is a polynomial using Temperature in Celsius
+            m=weight_conc*rho/KOH_mol_w
             a=-0.0151*m-1.6788*10**(-3)*m**2+2.2588*10**(-5)*m**3
             b=1-1.2062*10**(-3)*m+5.6024*10**(-4)*m**2-7.8228*10**(-6)*m**(3)
             Pv_h20=np.exp(81.6179-7699.68/T_in-10.9*np.log(T_in)+9.5891*10**(-3)*T_in)
