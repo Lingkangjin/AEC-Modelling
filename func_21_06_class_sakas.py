@@ -1522,33 +1522,26 @@ class AEC_model(object):
         df: dataframe
             dataframe that contains the polarisation curve, where the index are current denisties [mA/cm^2] and column is the tafel caluclated voltage [V]
         """
-        ya=[]
-        yca=[]
-        y_l=[]
-        y_d=[]
-        tot=[]
+       
     
         
-        for i in x:
-            ya.append(self.anodic_over_Kibria_high(i)[0])
-            yca.append(self.cathodic_over_Kibria_high(i)[0])
-            y_l.append(self.eta_liquid(i))
-            y_d.append(self.eta_d_Vermeiren(i))
-            tot.append(self.v_rev()+
-                       ya[-1]+
-                       yca[-1]+
-                       y_l[-1]+
-                       y_d[-1])
+       
+        ya=(self.anodic_over_Kibria_high(x)[0])
+        yca=(self.cathodic_over_Kibria_high(x)[0])
+        y_l=(self.eta_liquid(x))
+        y_d=(self.eta_d_Vermeiren(x))
+        tot=(self.v_rev()+
+                   ya+
+                   yca+
+                   y_l+
+                   y_d)
             
             
        
-        df=pd.DataFrame(index=x)
-        
-        df["Tafel"]=tot
        
         
         
-        return df["Tafel"]   
+        return tot
 
     #%% fsolve
     def kibria_fsolve(self,J,V_cell):
