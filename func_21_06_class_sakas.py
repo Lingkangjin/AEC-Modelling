@@ -2,7 +2,7 @@
 """
 Created on Tue May 24 15:39:53 2022
 
-@author: utente
+@author: Lingkang Jin l.jin@pm.univpm.it/s221045@dtu.dk
 """
 
 import numpy as np
