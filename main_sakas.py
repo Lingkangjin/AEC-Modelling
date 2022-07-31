@@ -2,7 +2,7 @@
 """
 Created on Thu May 26 23:50:41 2022
 
-@author: utente
+@author: Lingkang Jin l.jin@pm.univpm.it/s221045@dtu.dk
 """
 
 
