@@ -1,8 +1,11 @@
 # AEC-Modelling
 DTU Alkaline electrolyser modelling built during visitng PhD period @ DTU. <br>
 
+<img src="Ulleberg.png" alt="drawing" width="200"/>
+<img src="SAKAS.png" alt="drawing" width="200"/>
+<img src="Sanchez.png" alt="drawing" width="200"/>
 
-<img src="DeGroot.png" alt="drawing" width="200"/>
+<img src="DeGroot.png" alt="drawing" width="300"/>
 
 
 The objective is to build a model that can describe the polarisation curve, which depends on the setting parameters such as: <br>
