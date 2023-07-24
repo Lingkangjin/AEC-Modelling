@@ -9,6 +9,27 @@ The objective is to build a model that can describe the polarisation curve, whic
 - Temperature
 - Operating pressure, which directly influences electrolyte density
 
+## Getting Started
+
+### Dependencies
+
+* numpy
+* scipy
+* 
+
+### Installing
+
+* How/where to download your program
+* Any modifications needed to be made to files/folders
+
+### Executing program
+
+* How to run the program
+* Step-by-step bullets
+```
+code blocks for commands
+```
+
 ## Files description 📂
 
 There are basically 4 types of files in this repository <br>
