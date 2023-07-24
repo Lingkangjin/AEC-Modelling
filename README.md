@@ -58,7 +58,7 @@ There are basically 4 types of files in this repository <br>
 
 
 ## Authors ✒️
-Lingkang Jin (lingkang32@gmail.com)
+Lingkang Jin (lingkang32@gmail.com) <br>
 Rafael Nogueira Nakashima ()
 
 ## Version History
