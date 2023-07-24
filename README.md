@@ -1,6 +1,9 @@
 # AEC-Modelling
 DTU Alkaline electrolyser modelling built during visitng PhD period @ DTU. <br>
 
+
+![My Image](DeGroot.png)
+
 The objective is to build a model that can describe the polarisation curve, which depends on the setting parameters such as: <br>
 - Wt% of the electrolyte, in this specific case we are talking about KOH 
 - Temperature
