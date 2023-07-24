@@ -29,6 +29,24 @@ There are basically 4 types of files in this repository <br>
   <img src="DeGroot.png" alt="drawing" width="300"/>
 </p>
 
+### Datasets from literature
+1. Ulleberg Ø. Modeling of advanced alkaline electrolyzers: a system simulation approach. Int J Hydrogen Energy 2003;28:21–33. https://doi.org/10.1016/S0360-3199(02)00033-2
+2. Sakas G, Ibáñez-Rioja A, Ruuskanen V, Kosonen A, Ahola J, Bergmann O. Dynamic energy and mass balance model for an industrial alkaline water electrolyzer plant process. Int J Hydrogen Energy 2022;47:4328–45. https://doi.org/10.1016/J.IJHYDENE.2021.11.126
+3. Sánchez M, Amores E, Rodríguez L, Clemente-Jul C. Semi-empirical model and experimental validation for the performance evaluation of a 15 kW alkaline water electrolyzer. Int J Hydrogen Energy 2018;43:20332–45. https://doi.org/10.1016/j.ijhydene.2018.09.029
+4. de Groot MT, Kraakman J, Garcia Barros RL. Optimal operating parameters for advanced alkaline water electrolysis. Int J Hydrogen Energy 2022. https://doi.org/10.1016/j.ijhydene.2022.08.075
+
+
+## Authors ✒️
+Lingkang Jin (lingkang32@gmail.com)
+Rafael Nogueira Nakashima ()
+
+## Version History
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
+* 0.1
+    * Initial Release
+      
 ## References
 Below i report all literature used, divided by category:
 
