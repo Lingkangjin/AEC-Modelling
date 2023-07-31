@@ -1,8 +1,8 @@
 # AEC-Modelling
 DTU Alkaline electrolyser modelling built during visitng PhD period (2022) @ DTU energy under supervision of Henrik Lund Frandsen. <br>
 <p float="left">
-  <img src="logounivpm.png" alt="drawing" width="300"/>
- <img src="logodtu.png" alt="drawing" width="300"/>
+  <img src="logounivpm.png" alt="drawing" width="150"/>
+ <img src="logodtu.png" alt="drawing" width="100"/>
 </p>
 
 
