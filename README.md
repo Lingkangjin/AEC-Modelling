@@ -37,18 +37,18 @@ There are basically 4 types of files in this repository <br>
 ## Citation ✅
 [1] Jin, L., Nogueira Nakashima, R., Lund Frandsen, H., & Comodi, G. (2023). Alkaline Electrolysis for Green Hydrogen Production: Techno-Economic Analysis of Temperature Influence and Control. 36th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS 2023), 908–919. https://doi.org/10.52202/069564-0082
 
+## Authors ✒️
+Lingkang Jin (lingkang32@gmail.com/l.jin@pm.univpm.it) <br>
+Rafael Nogueira Nakashima (rafnn@dtu.dk)
+
+## Datasets and modelling models
+
 ### Datasets from literature 
 1. Ulleberg Ø. Modeling of advanced alkaline electrolyzers: a system simulation approach. Int J Hydrogen Energy 2003;28:21–33. https://doi.org/10.1016/S0360-3199(02)00033-2
 2. Sakas G, Ibáñez-Rioja A, Ruuskanen V, Kosonen A, Ahola J, Bergmann O. Dynamic energy and mass balance model for an industrial alkaline water electrolyzer plant process. Int J Hydrogen Energy 2022;47:4328–45. https://doi.org/10.1016/J.IJHYDENE.2021.11.126
 3. Sánchez M, Amores E, Rodríguez L, Clemente-Jul C. Semi-empirical model and experimental validation for the performance evaluation of a 15 kW alkaline water electrolyzer. Int J Hydrogen Energy 2018;43:20332–45. https://doi.org/10.1016/j.ijhydene.2018.09.029
 4. de Groot MT, Kraakman J, Garcia Barros RL. Optimal operating parameters for advanced alkaline water electrolysis. Int J Hydrogen Energy 2022. https://doi.org/10.1016/j.ijhydene.2022.08.075
 
-
-## Authors ✒️
-Lingkang Jin (lingkang32@gmail.com/l.jin@pm.univpm.it) <br>
-Rafael Nogueira Nakashima (rafnn@dtu.dk)
-
-## Datasets and modelling models
 
 ### Reversible voltage
 [1] 	Domain E, Conductivity SE. A Comprehensive Survey of Alkaline Electrolyzer Modeling : Electrical Domain and Specific Electrolyte Conductivity 2022.<br>
