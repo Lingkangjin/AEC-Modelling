@@ -1,5 +1,5 @@
 # AEC-Modelling
-DTU Alkaline electrolyser modelling built during visitng PhD period @ DTU energy under supervision of Henrik Lund Frandsen. <br>
+DTU Alkaline electrolyser modelling built during visitng PhD period (2022) @ DTU energy under supervision of Henrik Lund Frandsen. <br>
 
 
 
@@ -9,26 +9,7 @@ The objective is to build a model that can describe the polarisation curve, whic
 - Temperature
 - Operating pressure, which directly influences electrolyte density
 
-## Getting Started
 
-### Dependencies
-
-* numpy
-* scipy
-* 
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
 
 ## Files description 📂
 
@@ -50,7 +31,10 @@ There are basically 4 types of files in this repository <br>
   <img src="DeGroot.png" alt="drawing" width="300"/>
 </p>
 
-### Datasets from literature
+## Citation ✅
+[1] Jin, L., Nogueira Nakashima, R., Lund Frandsen, H., & Comodi, G. (2023). Alkaline Electrolysis for Green Hydrogen Production: Techno-Economic Analysis of Temperature Influence and Control. 36th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS 2023), 908–919. https://doi.org/10.52202/069564-0082
+
+### Datasets from literature 
 1. Ulleberg Ø. Modeling of advanced alkaline electrolyzers: a system simulation approach. Int J Hydrogen Energy 2003;28:21–33. https://doi.org/10.1016/S0360-3199(02)00033-2
 2. Sakas G, Ibáñez-Rioja A, Ruuskanen V, Kosonen A, Ahola J, Bergmann O. Dynamic energy and mass balance model for an industrial alkaline water electrolyzer plant process. Int J Hydrogen Energy 2022;47:4328–45. https://doi.org/10.1016/J.IJHYDENE.2021.11.126
 3. Sánchez M, Amores E, Rodríguez L, Clemente-Jul C. Semi-empirical model and experimental validation for the performance evaluation of a 15 kW alkaline water electrolyzer. Int J Hydrogen Energy 2018;43:20332–45. https://doi.org/10.1016/j.ijhydene.2018.09.029
@@ -58,18 +42,10 @@ There are basically 4 types of files in this repository <br>
 
 
 ## Authors ✒️
-Lingkang Jin (lingkang32@gmail.com) <br>
-Rafael Nogueira Nakashima ()
+Lingkang Jin (lingkang32@gmail.com/l.jin@pm.univpm.it) <br>
+Rafael Nogueira Nakashima (rafnn@dtu.dk)
 
-## Version History
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-      
-## References
-Below i report all literature used, divided by category:
+## Datasets and modelling models
 
 ### Reversible voltage
 [1] 	Domain E, Conductivity SE. A Comprehensive Survey of Alkaline Electrolyzer Modeling : Electrical Domain and Specific Electrolyte Conductivity 2022.<br>
