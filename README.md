@@ -41,7 +41,7 @@ There are basically 4 types of files in this repository <br>
 Lingkang Jin (lingkang32@gmail.com/l.jin@pm.univpm.it) <br>
 Rafael Nogueira Nakashima (rafnn@dtu.dk)
 
-## Datasets and modelling models
+## Datasets and numerical models
 
 ### Datasets from literature 
 1. Ulleberg Ø. Modeling of advanced alkaline electrolyzers: a system simulation approach. Int J Hydrogen Energy 2003;28:21–33. https://doi.org/10.1016/S0360-3199(02)00033-2
