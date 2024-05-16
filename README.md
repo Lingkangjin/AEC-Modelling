@@ -36,9 +36,20 @@ There are basically 4 types of files in this repository <br>
 
 ## Citation ✅
 [1] Jin, L., Nogueira Nakashima, R., Lund Frandsen, H., & Comodi, G. (2023). Alkaline Electrolysis for Green Hydrogen Production: Techno-Economic Analysis of Temperature Influence and Control. 36th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS 2023), 908–919. https://doi.org/10.52202/069564-0082
-
 ```
-something
+@article{Jin2023AlkalineControl,
+    title = {{Alkaline Electrolysis for Green Hydrogen Production: Techno-Economic Analysis of Temperature Influence and Control}},
+    year = {2023},
+    journal = {36th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS 2023)},
+    author = {Jin, Lingkang and Nogueira Nakashima, Rafael and Lund Frandsen, Henrik and Comodi, Gabriele},
+    pages = {908--919},
+    publisher = {ECOS 2023},
+    url = {https://www.proceedings.com/069564-0082.html},
+    address = {Las Palmas De Gran Canaria, Spain},
+    isbn = {978-1-7138-7492-8},
+    doi = {10.52202/069564-0082},
+    keywords = {Conference Proceedings, Content Hosting, DOI, Digital Library, Print-on-Demand, Proceedings}
+}
 ```
 
 ## Authors ✒️
