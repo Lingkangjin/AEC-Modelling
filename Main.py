@@ -2,34 +2,34 @@
 """
 Created on Thu May 26 23:50:41 2022
 
-@author: utente
+@author: Lingkang Jin (l.jin@pm.univpm.it)
 """
 
 
-import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-from func import *
-from Thermal_assess import *
+from src.func import *
+from src.Thermal_assess import *
 
 from scipy.optimize import curve_fit
 
-from scipy.optimize import fsolve
 from sklearn.metrics import r2_score
 
 import seaborn as sns
 # %%
+default_colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728',
+                  '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+plt.rcParams.update({'font.size': 14, 'font.family': "Times New Roman"})
 
-plt.rcParams.update({'font.family': "Times New Roman"})
-plt.rcParams['figure.constrained_layout.use'] = True
-plt.rcParams['figure.dpi'] = 150
+plt.rcParams.update({"figure.dpi": "100"})
+plt.rcParams["figure.constrained_layout.use"] = True
+plt.rcParams['legend.frameon'] = False
 
-# plt.style.use('classic')
-# plt.rcParams.update({'font.family': "Times New Roman"})
+plt.rcParams['axes.prop_cycle'] = plt.cycler(color=default_colors)
+plt.rcParams["xtick.minor.visible"] = True
+plt.rcParams["ytick.minor.visible"] = True
+params = {'mathtext.default': 'regular'}
+plt.rcParams.update(params)
 
-# plt.rcParams['font.size'] = 30
-# plt.rcParams['legend.fontsize'] = 30
-# plt.rcParams['xtick.minor.visible'] = False
 
 # %% using only tafel and semplify  everything
 """
@@ -78,8 +78,6 @@ df_sakas_50 = pd.read_csv(exp+"\\Sakas 59.6 °C.csv", index_col=0)
 df_sakas_60 = pd.read_csv(exp+"\\Sakas 61.15 °C.csv", index_col=0)
 df_sakas_70 = pd.read_csv(exp+"\\Sakas 70°C .csv", index_col=0)
 
-# %% plot configurations
-# plt.rcParams.update({'font.size': 18, 'font.family': "Times New Roman"})
 
 
 # %% sakas setting conditions
@@ -109,7 +107,7 @@ sampling_number = 20
 colo = ['b', 'g', 'r', 'c', 'm', 'y', 'k']
 
 # %% scatter of experiments
-plt.figure(figsize=(10, 8), constrained_layout=True)
+plt.figure()
 sns.scatterplot(data=Sakas_exp, x="J [mA/cm^2]",
                 y="V [V]", hue="T [K]", palette=colo, s=80)
 plt.grid()
@@ -138,7 +136,7 @@ v_rev = model.v_rev()  # V
 sigma_l = model.sigma_liquid()  # [S/cm]
 
 
-def func_fit1(X, delta_l, alfa, C1, C2):
+def Parameter_estimation(X, delta_l, alfa, C1, C2):
     j, T = X
     model = AEC_model(T, P_s, w)
     model.wt_to_cOH()
@@ -164,20 +162,16 @@ bnds = ((0, 0.1, -8000, 0), (1, 0.4, -3000, 15))
 # =============================================================================
 # Finding coefficients
 # =============================================================================
-popt, pcov = curve_fit(func_fit1, (j, T), y, p0, bounds=bnds)
+popt, pcov = curve_fit(Parameter_estimation, (j, T), y, p0, bounds=bnds)
 
 j_new = np.linspace(50, 400, 100)
 
 # %%
 
-plt.style.use('classic')
-
-plt.rcParams['legend.fontsize'] = 16
-plt.rcParams['xtick.minor.visible'] = False
-plt.rcParams.update({'font.size': 18, 'font.family': "Times New Roman"})
 
 
-plt.figure(figsize=(6, 5), constrained_layout=True)
+
+plt.figure()
 sns.scatterplot(data=Sakas_exp, x="J [mA/cm^2]",
                 y="V [V]", hue="T [K]", palette=colo, legend=False)
 sns.scatterplot(data=rand, x="J [mA/cm^2]", y="V [V]",
@@ -191,13 +185,13 @@ for l in T_s:
     y_fit = []
 
     for i in range(len(j_new)):
-        y_fit.append(func_fit1((j_new[i], T_new[i]), *popt))
+        y_fit.append(Parameter_estimation((j_new[i], T_new[i]), *popt))
 
     d = Sakas_exp[Sakas_exp["T [K]"] == l]
 
     y_pred = []
     for jj in d["J [mA/cm^2]"]:
-        y_pred.append(func_fit1((jj, l), *popt))
+        y_pred.append(Parameter_estimation((jj, l), *popt))
 
     y_real = d["V [V]"]
 
@@ -260,14 +254,6 @@ df_univpm = pd.read_csv(exp+"\\UNIVPM_data.csv", index_col=0)
 
 df = df_univpm.copy()
 
-# cols=['AIM_Stack_1_temp','Temp. cat', 'Cell voltage [V]','J from faraday $[mA/cm^2]$','AIM_Gas_pressure_B2'
-#       ,'Pres. cat [bar]','AIM_Gas_pressure_B2']
-
-# for i in df.columns:
-#     if i in cols:
-#         pass
-#     else:
-#         df.drop(columns=[i],axis=1, inplace=True)
 
 
 df = df[df['Pres. cat [bar]'] == 4.5]  # 4 bar
@@ -294,3 +280,6 @@ sns.scatterplot(data=df_test, x="J from faraday $[mA/cm^2]$", y="Cell voltage [V
 # %%
 plt.scatter(df_test[df_test['Temp. cat'] == 50]['J from faraday $[mA/cm^2]$'],
             df_test[df_test['Temp. cat'] == 50]['Cell voltage [V]'])
+
+
+plt.show()

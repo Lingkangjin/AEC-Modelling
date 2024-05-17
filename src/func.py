@@ -8,42 +8,13 @@ Created on Tue May 24 15:39:53 2022
 import numpy as np
 import pandas as pd
 
-import pickle
-from scipy.optimize import fsolve
-
-
-
-#%%
-#solving io with arrenhius plot for tafel
-
-
-
 
 
 #%% loading parameters
 
-param="Fitting Parameters" #Parameters fodler name
-
-# df_c=pd.read_pickle(param+"\df_c.pkl")
-# DF_ARR=pd.read_pickle(param+"\DF_ARR.pkl")
+param="Fitting Parameters" #Parameters folder name
 
 
-
-# with open(param+"\\i0.txt", "rb") as myFile:
-#     io_par = pickle.load(myFile)
-
-# with open(param+"\\tafel1.txt", "rb") as myFile:
-#     tafel_par = pickle.load(myFile)
-    
-    
-
-# with open(param+"\\alpha.txt", "rb") as myFile:
-#     alpha_par = pickle.load(myFile)    
-
-
-
-# with open(param+"\\Vermeiren.txt", "rb") as myFile:
-#     VE_par = pickle.load(myFile)    
 
 #%% Define the class
 
@@ -295,7 +266,6 @@ class AEC_model(object):
 
 
 
-# sig_l=-2.041*model.COH_conc-0.0028*model.COH_conc**2+0.005332 *model.COH_conc*model.T +207.2*model.COH_conc/model.T+0.001043*model.COH_conc**3-0.0000003*model.COH_conc**2*model.T**2
 
         
     def eta_liquid(self,J): 

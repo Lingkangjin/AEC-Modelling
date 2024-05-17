@@ -1,8 +1,8 @@
 # AEC-Modelling
 DTU Alkaline electrolyser modelling built during visitng PhD period (2022) @ DTU energy under supervision of Henrik Lund Frandsen. <br>
 <p float="left">
-  <img src="logounivpm.png" alt="drawing" width="150"/>
- <img src="logodtu.png" alt="drawing" width="100"/>
+  <img src="Readme_pictures/logounivpm.png" alt="drawing" width="150"/>
+ <img src="Readme_pictures/logodtu.png" alt="drawing" width="100"/>
 </p>
 
 
@@ -13,6 +13,15 @@ The objective is to build a model that can describe the polarisation curve, whic
 - Operating pressure, which directly influences electrolyte density
 
 
+## installation
+### installation with a general virtual env
+`pip install -r requirements.txt`
+
+### installation with conda 
+In `conda`-enabled shell (e.g. Anaconda Prompt), run:
+ - `conda create -n AEC-Modeling`
+ - `conda activate pip install -r requirements.txt`
+ - `pip install -r requirements.txt`
 
 ## Files description 📂
 
@@ -25,13 +34,13 @@ There are basically 4 types of files in this repository <br>
 ## Examples 🖼️
 
 <p float="left">
-  <img src="Ulleberg.png" alt="drawing" width="300"/>
- <img src="SAKAS.png" alt="drawing" width="300"/>
+  <img src="Readme_pictures/Ulleberg.png" alt="drawing" width="300"/>
+ <img src="Readme_pictures/SAKAS.png" alt="drawing" width="300"/>
 </p>
 
 <p float="left">
-  <img src="Sanchez.png" alt="drawing" width="300"/>
-  <img src="DeGroot.png" alt="drawing" width="300"/>
+  <img src="Readme_pictures/Sanchez.png" alt="drawing" width="300"/>
+  <img src="Readme_pictures/DeGroot.png" alt="drawing" width="300"/>
 </p>
 
 ## Citation ✅
