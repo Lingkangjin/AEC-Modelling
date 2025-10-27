@@ -1,5 +1,6 @@
-# AEC-Modelling
+# ALkaline Electrolyzer four-parameters semi-empirical Modelling
 DTU Alkaline electrolyser modelling built during visitng PhD period (2022) @ DTU energy under supervision of Henrik Lund Frandsen. <br>
+It is based on the approach of four parameter based semi empirical modeling with validation with  literature based datasets. Suitable for the system level modeling of the alkaline electrolyser for the integration to a larger scale.
 <p float="left">
   <img src="Readme_pictures/logounivpm.png" alt="drawing" width="150"/>
  <img src="Readme_pictures/logodtu.png" alt="drawing" width="100"/>
