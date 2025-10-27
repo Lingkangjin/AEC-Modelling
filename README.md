@@ -44,8 +44,25 @@ There are basically 4 types of files in this repository <br>
 </p>
 
 ## Citation ✅
-[1] Jin, L., Nogueira Nakashima, R., Lund Frandsen, H., & Comodi, G. (2023). Alkaline Electrolysis for Green Hydrogen Production: Techno-Economic Analysis of Temperature Influence and Control. 36th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS 2023), 908–919. https://doi.org/10.52202/069564-0082
+[1] Lingkang Jin, Rafael Nogueira Nakashima, Gabriele Comodi, Henrik Lund Frandsen, Alkaline electrolysis for green hydrogen production: A novel, simple model for thermo-electrochemical coupled system analysis, Applied Thermal Engineering, Vol. 262, 2025, 125154.
+ISSN: 1359-4311. https://doi.org/10.1016/j.applthermaleng.2024.125154
+
+[1] Lingkang Jin, Rafael Nogueira Nakashima, Henrik Lund Frandsen, Gabriele Comodi. Alkaline Electrolysis for Green Hydrogen Production: Techno-Economic Analysis of Temperature Influence and Control. 36th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems (ECOS 2023), 908–919. https://doi.org/10.52202/069564-0082
 ```
+@article{JIN2025125154,
+title = {Alkaline electrolysis for green hydrogen production: A novel, simple model for thermo-electrochemical coupled system analysis},
+journal = {Applied Thermal Engineering},
+volume = {262},
+pages = {125154},
+year = {2025},
+issn = {1359-4311},
+doi = {https://doi.org/10.1016/j.applthermaleng.2024.125154},
+url = {https://www.sciencedirect.com/science/article/pii/S1359431124028229},
+author = {Lingkang Jin and Rafael {Nogueira Nakashima} and Gabriele Comodi and Henrik Lund Frandsen},
+keywords = {Power-to-hydrogen, Alkaline electrolysis, Temperature control, Levelized cost of hydrogen, Hydrogen production},
+abstract = {Alkaline water electrolysis (AWE) is the most mature electrochemical technology for hydrogen production from renewable electricity. Thus, its mathematical modeling is an important tool to provide new perspectives for the design and optimization of energy storage and decarbonization systems. However, current models rely on numerous empirical parameters and neglect variations of temperature and concentration alongside the electrolysis cell, which can impact the application and reliability of the simulation results. Thus, this study proposes a simple four-parameter semi-empirical model for AWE system analysis, which relies on minimal fitting data, while providing reliable extrapolation results. In addition, the effect of model dimensionality (i.e., 0D, 1/2D and 1D) are carefully assessed in the optimization of an AWE system. The results indicate that the proposed model can accurately reproduce literature data from four previous works (R2≥0.98), as well as new experimental data. In the system optimization, the trade-offs existing in the lye cooling sizing highlight that maintaining a low temperature difference in AWE stacks (76–80 °C) leads to higher efficiencies and lower hydrogen costs.}
+}
+
 @article{Jin2023AlkalineControl,
     title = {{Alkaline Electrolysis for Green Hydrogen Production: Techno-Economic Analysis of Temperature Influence and Control}},
     year = {2023},
@@ -61,9 +78,9 @@ There are basically 4 types of files in this repository <br>
 }
 ```
 
-## Authors ✒️
-Lingkang Jin (lingkang32@gmail.com/l.jin@pm.univpm.it) <br>
-Rafael Nogueira Nakashima (rafnn@dtu.dk)
+## Code contributers ✒️
+- Lingkang Jin (lingkang32@gmail.com/l.jin@tue.nl) <br>
+- Rafael Nogueira Nakashima (rafnn@dtu.dk)
 
 ## Datasets and numerical models
 
