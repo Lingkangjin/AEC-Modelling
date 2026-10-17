@@ -1,3 +1,25 @@
-.csv
-.png
-.xlsx
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+
+# IDEs
+.idea/
+.vscode/
+.ipynb_checkpoints/
+
+# Outputs produced by the examples
+examples/figures/
+*.log

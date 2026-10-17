@@ -1,0 +1,80 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aec-modelling"
+dynamic = ["version"]
+description = "Four-parameter semi-empirical electrochemical and thermal model of alkaline water electrolysers (AWE/AEC), with fitting tools and literature datasets."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [
+    { name = "Lingkang Jin", email = "l.jin@tue.nl" },
+    { name = "Rafael Nogueira Nakashima", email = "rafnn@dtu.dk" },
+]
+keywords = [
+    "alkaline electrolysis",
+    "electrolyser",
+    "hydrogen",
+    "polarisation curve",
+    "thermal model",
+    "power-to-x",
+    "energy systems",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.8",
+    "pandas>=1.4",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.6"]
+dev = [
+    "matplotlib>=3.6",
+    "pytest>=7",
+    "ruff>=0.5",
+    "build>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Lingkangjin/AEC-Modelling"
+Paper = "https://doi.org/10.1016/j.applthermaleng.2024.125154"
+
+[tool.hatch.version]
+path = "src/aec_modelling/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aec_modelling"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/aec_modelling",
+    "tests",
+    "examples",
+    "README.md",
+    "CITATION.cff",
+    "LICENSE",
+    "CHANGELOG.md",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "NPY", "UP"]
+ignore = ["E741"]  # `I` is the conventional symbol for current

@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "aec-modelling: four-parameter thermo-electrochemical model of alkaline water electrolysers"
+type: software
+license: MIT
+authors:
+  - family-names: Jin
+    given-names: Lingkang
+  - family-names: Nogueira Nakashima
+    given-names: Rafael
+repository-code: "https://github.com/Lingkangjin/AEC-Modelling"
+version: 0.1.0
+preferred-citation:
+  type: article
+  title: "Alkaline electrolysis for green hydrogen production: A novel, simple model for thermo-electrochemical coupled system analysis"
+  authors:
+    - family-names: Jin
+      given-names: Lingkang
+    - family-names: Nogueira Nakashima
+      given-names: Rafael
+    - family-names: Comodi
+      given-names: Gabriele
+    - family-names: Lund Frandsen
+      given-names: Henrik
+  journal: "Applied Thermal Engineering"
+  volume: 262
+  start: 125154
+  year: 2025
+  doi: "10.1016/j.applthermaleng.2024.125154"
